@@ -61,18 +61,18 @@ flowchart TB
         Practice[Practice Tracker]
         Profile[User Profile]
     end
-    
+
     subgraph backend [Backend]
         API[Next.js API Routes]
         Auth[NextAuth.js]
         DB[(Vercel Postgres)]
     end
-    
+
     subgraph external [External Services]
         YouTube[YouTube API]
         OAuth[Google/GitHub OAuth]
     end
-    
+
     Landing --> Videos
     Videos --> API
     Practice --> API
