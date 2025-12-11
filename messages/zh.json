@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "home": "首页",
+    "videos": "视频库",
+    "practice": "练习记录",
+    "login": "登录",
+    "getStarted": "开始学习"
+  },
+  "home": {
+    "hero": {
+      "title": "提升你的",
+      "titleHighlight": "网球技能",
+      "description": "汇聚全球顶尖网球教练的教学视频，个性化练习记录，科学系统地提升你的球技",
+      "getStarted": "开始学习",
+      "browseVideos": "浏览视频库"
+    },
+    "features": {
+      "title": "核心功能",
+      "video": {
+        "title": "精选教学视频",
+        "description": "从YouTube精选优质网球教学内容，涵盖发球、正手、反手等各项技术"
+      },
+      "practice": {
+        "title": "练习记录追踪",
+        "description": "记录每次练习，分析进步轨迹，数据可视化让提升一目了然"
+      },
+      "favorite": {
+        "title": "个性化收藏",
+        "description": "收藏喜欢的视频，构建专属学习路径，随时回顾关键技术要点"
+      }
+    },
+    "categories": {
+      "title": "技术分类",
+      "serve": "发球",
+      "forehand": "正手",
+      "backhand": "反手",
+      "volley": "网前",
+      "footwork": "步法",
+      "tactics": "战术"
+    },
+    "cta": {
+      "title": "准备好开始了吗？",
+      "description": "立即注册，开启你的网球进阶之旅",
+      "button": "免费注册"
+    }
+  },
+  "footer": {
+    "brand": {
+      "description": "专业的网球学习平台，汇聚全球优质教学视频，助您提升球技，享受网球运动的乐趣。"
+    },
+    "product": {
+      "title": "产品",
+      "videos": "视频库",
+      "practice": "练习记录"
+    },
+    "resources": {
+      "title": "资源",
+      "about": "关于我们",
+      "contact": "联系方式"
+    },
+    "legal": {
+      "privacy": "隐私政策",
+      "terms": "使用条款",
+      "rights": "版权所有"
+    }
+  }
+}

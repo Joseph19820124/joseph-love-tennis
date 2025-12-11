@@ -1,17 +1,21 @@
+"use client";
+
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import Container from "./container";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const t = useTranslations("footer");
 
   const footerLinks = {
     product: [
-      { href: "/videos", label: "视频库" },
-      { href: "/practice", label: "练习记录" },
+      { href: "/videos", label: t("product.videos") },
+      { href: "/practice", label: t("product.practice") },
     ],
     resources: [
-      { href: "/about", label: "关于我们" },
-      { href: "/contact", label: "联系方式" },
+      { href: "/about", label: t("resources.about") },
+      { href: "/contact", label: t("resources.contact") },
     ],
   };
 
@@ -25,13 +29,15 @@ export default function Footer() {
               Joseph Love Tennis
             </h2>
             <p className="text-muted mt-4 max-w-md text-sm">
-              专业的网球学习平台，汇聚全球优质教学视频，助您提升球技，享受网球运动的乐趣。
+              {t("brand.description")}
             </p>
           </div>
 
           {/* Product Links */}
           <div>
-            <h3 className="text-foreground mb-4 font-semibold">产品</h3>
+            <h3 className="text-foreground mb-4 font-semibold">
+              {t("product.title")}
+            </h3>
             <ul className="space-y-2">
               {footerLinks.product.map((link) => (
                 <li key={link.href}>
@@ -48,7 +54,9 @@ export default function Footer() {
 
           {/* Resources Links */}
           <div>
-            <h3 className="text-foreground mb-4 font-semibold">资源</h3>
+            <h3 className="text-foreground mb-4 font-semibold">
+              {t("resources.title")}
+            </h3>
             <ul className="space-y-2">
               {footerLinks.resources.map((link) => (
                 <li key={link.href}>
@@ -68,20 +76,20 @@ export default function Footer() {
         <div className="border-border border-t py-6">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <p className="text-muted text-sm">
-              © {currentYear} Joseph Love Tennis. All rights reserved.
+              © {currentYear} Joseph Love Tennis. {t("legal.rights")}
             </p>
             <div className="flex gap-4">
               <Link
                 href="/privacy"
                 className="text-muted hover:text-primary text-sm transition-colors"
               >
-                隐私政策
+                {t("legal.privacy")}
               </Link>
               <Link
                 href="/terms"
                 className="text-muted hover:text-primary text-sm transition-colors"
               >
-                使用条款
+                {t("legal.terms")}
               </Link>
             </div>
           </div>

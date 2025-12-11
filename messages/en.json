@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "home": "Home",
+    "videos": "Videos",
+    "practice": "Practice",
+    "login": "Login",
+    "getStarted": "Get Started"
+  },
+  "home": {
+    "hero": {
+      "title": "Elevate Your",
+      "titleHighlight": "Tennis Skills",
+      "description": "Curated coaching videos from world-class tennis instructors, personalized practice tracking, and systematic skill improvement",
+      "getStarted": "Get Started",
+      "browseVideos": "Browse Videos"
+    },
+    "features": {
+      "title": "Core Features",
+      "video": {
+        "title": "Curated Tutorial Videos",
+        "description": "Hand-picked quality tennis tutorials from YouTube, covering serve, forehand, backhand, and all techniques"
+      },
+      "practice": {
+        "title": "Practice Tracking",
+        "description": "Record every practice session, analyze progress trends, visualize your improvement at a glance"
+      },
+      "favorite": {
+        "title": "Personal Collections",
+        "description": "Bookmark your favorite videos, build custom learning paths, review key techniques anytime"
+      }
+    },
+    "categories": {
+      "title": "Skill Categories",
+      "serve": "Serve",
+      "forehand": "Forehand",
+      "backhand": "Backhand",
+      "volley": "Volley",
+      "footwork": "Footwork",
+      "tactics": "Tactics"
+    },
+    "cta": {
+      "title": "Ready to Begin?",
+      "description": "Sign up now and start your tennis improvement journey",
+      "button": "Free Sign Up"
+    }
+  },
+  "footer": {
+    "brand": {
+      "description": "Professional tennis learning platform, gathering quality coaching videos worldwide, helping you improve your skills and enjoy the sport"
+    },
+    "product": {
+      "title": "Product",
+      "videos": "Video Library",
+      "practice": "Practice Tracker"
+    },
+    "resources": {
+      "title": "Resources",
+      "about": "About Us",
+      "contact": "Contact"
+    },
+    "legal": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "rights": "All rights reserved"
+    }
+  }
+}

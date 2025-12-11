@@ -2,16 +2,19 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import Container from "./container";
 import Button from "../ui/button";
+import LanguageSwitcher from "../ui/language-switcher";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const t = useTranslations("nav");
 
   const navLinks = [
-    { href: "/", label: "首页" },
-    { href: "/videos", label: "视频库" },
-    { href: "/practice", label: "练习记录" },
+    { href: "/", label: t("home") },
+    { href: "/videos", label: t("videos") },
+    { href: "/practice", label: t("practice") },
   ];
 
   return (
@@ -38,12 +41,13 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* Auth Buttons */}
+          {/* Auth Buttons & Language Switcher */}
           <div className="hidden items-center space-x-4 md:flex">
+            <LanguageSwitcher />
             <Button variant="ghost" size="sm">
-              登录
+              {t("login")}
             </Button>
-            <Button size="sm">开始学习</Button>
+            <Button size="sm">{t("getStarted")}</Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -85,10 +89,11 @@ export default function Navbar() {
                 </Link>
               ))}
               <div className="flex flex-col space-y-2 pt-4">
+                <LanguageSwitcher />
                 <Button variant="ghost" size="sm">
-                  登录
+                  {t("login")}
                 </Button>
-                <Button size="sm">开始学习</Button>
+                <Button size="sm">{t("getStarted")}</Button>
               </div>
             </div>
           </div>
